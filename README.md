@@ -1,4 +1,4 @@
-# 🤖 BOT DE TRADING V4 - PyQt5 + CCXT
+# 🤖 BOT DE TRADING V5.0 - PyQt5 + CCXT
 
 Este proyecto es un **bot de trading automático** para criptomonedas, que combina una interfaz gráfica intuitiva (PyQt5) con lógica de trading profesional usando [ccxt](https://github.com/ccxt/ccxt).
 
