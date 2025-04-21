@@ -1,0 +1,7 @@
+pyqt5
+ccxt
+pandas
+matplotlib
+openpyxl
+qdarkstyle
+mplfinance
