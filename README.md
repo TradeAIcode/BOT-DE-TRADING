@@ -101,7 +101,7 @@ Esta función será usada automáticamente por el bot si activas la estrategia `
 ## 📸 Vista Previa de la Aplicación
 
 ### Configuración del Exchange
-![Configuración API](imagenes/api.jpg)
+![Configuración API](imagenes/portada.jpg)
 
 ### Editor de Estrategia Personalizada
 ![Estrategia Personalizada](imagenes/estrategia_p.jpg)
