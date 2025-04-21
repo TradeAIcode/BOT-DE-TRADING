@@ -19,6 +19,9 @@ Permite operar con estrategias configurables, filtros de salida (stop loss, take
 
 ---
 
+### Panel Principal del Bot
+![Panel Principal](imagenes/portada.jpg)
+
 ## 🖥️ Requisitos
 
 - Python 3.8 o superior
@@ -101,13 +104,12 @@ Esta función será usada automáticamente por el bot si activas la estrategia `
 ## 📸 Vista Previa de la Aplicación
 
 ### Configuración del Exchange
-![Configuración API](imagenes/portada.jpg)
+![Configuración API](imagenes/api.jpg)
 
 ### Editor de Estrategia Personalizada
 ![Estrategia Personalizada](imagenes/estrategia_p.jpg)
 
-### Panel Principal del Bot
-![Panel Principal](imagenes/main.jpg)
+
 
 ---
 
