@@ -1,32 +1,65 @@
+
 # 🤖 BOT DE TRADING V5.0 - PyQt5 + CCXT
 
 [![Python](https://img.shields.io/badge/Python-3.9-blue)](https://www.python.org/)
 [![PyQt5](https://img.shields.io/badge/PyQt5-5.15-green)](https://pypi.org/project/PyQt5/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Este proyecto es un **bot de trading automático** para criptomonedas, que combina una interfaz gráfica intuitiva (PyQt5) con lógica de trading profesional usando [ccxt](https://github.com/ccxt/ccxt).
+---
 
-Permite operar con estrategias configurables, filtros de salida (stop loss, take profit, trailing stop) y control visual del historial de operaciones.
+# 📚 Tabla de Contenidos
+- [Descripción](#-descripción)
+- [Vista previa](#-vista-previa-de-la-aplicación)
+- [Características principales](#-características-principales)
+- [Instalación y requisitos](#-instalación-y-requisitos)
+- [Uso detallado](#-uso-detallado)
+- [Crear tu propia estrategia](#-crear-tu-propia-estrategia)
+- [Tecnologías utilizadas](#-tecnologías-utilizadas)
+- [Licencia](#-licencia)
+- [Agradecimientos](#-agradecimientos)
 
 ---
 
-## 🧠 Características Principales
+## 📚 Descripción
 
-- ✅ Interfaz gráfica en PyQt5, separada por pestañas
-- 🔐 Soporte para múltiples exchanges a través de CCXT
-- 📈 Soporte para estrategias de entrada: RSI, cruces de EMAs, Pullback, y más
-- 🛡️ Filtros automáticos: Stop Loss, Take Profit, Trailing Stop
-- 🧩 Pestaña para escribir estrategias personalizadas desde la GUI
-- 💾 Historial de operaciones con exportación a Excel
-- 🔄 Recarga dinámica de configuración desde JSON
-- 💬 Sistema de logs y mensajes en tiempo real
+**BOT DE TRADING V5.0** es un bot automático para criptomonedas que combina la facilidad de una interfaz **PyQt5** con la potencia de **CCXT**.
+
+- Operaciones automáticas en exchanges.
+- Filtros de protección: Stop Loss, Take Profit, Trailing Stop.
+- Editor para estrategias propias.
+
+Ideal para traders que desean automatizar sin complicaciones.
 
 ---
+
+## 📸 Vista previa de la aplicación
 
 ### Panel Principal del Bot
 ![Panel Principal](imagenes/portada.jpg)
 
-## 🖥️ Requisitos
+### Configuración del Exchange
+![Configuración API](imagenes/api.jpg)
+
+### Editor de Estrategia Personalizada
+![Estrategia Personalizada](imagenes/estrategia_p.jpg)
+
+---
+
+## ✨ Características principales
+
+- ✅ GUI profesional en PyQt5.
+- 🔐 Múltiples exchanges soportados mediante CCXT.
+- 📈 Estrategias: RSI, EMAs, Pullback, Personalizadas.
+- 🛡️ Stop Loss, Take Profit, Trailing Stop.
+- 📅 Exportación de historial a Excel.
+- 🔄 Recarga dinámica de configuración.
+- 💬 Logs en tiempo real.
+
+---
+
+## ⚙️ Instalación y requisitos
+
+### Requisitos
 
 - Python 3.8 o superior
 - PyQt5
@@ -34,7 +67,7 @@ Permite operar con estrategias configurables, filtros de salida (stop loss, take
 - pandas
 - openpyxl
 
-Puedes instalar todo con:
+### Instalación rápida
 
 ```bash
 pip install -r requirements.txt
@@ -42,57 +75,21 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Cómo Ejecutarlo
+## 🚀 Uso detallado
+
+### Ejecución del bot
 
 ```bash
 python main.py
 ```
 
-> Si estás en Windows y tienes errores con permisos o rutas, asegúrate de ejecutar como administrador o usar un entorno virtual limpio.
+> ⚡ Si ves errores de permisos en Windows, ejecuta como administrador o usa un entorno virtual.
 
 ---
 
-## 📁 Estructura del Proyecto
+## 🧠 Crear tu propia estrategia
 
-```text
-BOT_TRADING/
-├── core/
-│   ├── auto_profit.py
-│   ├── exchange_utils.py
-│   ├── stop_loss.py
-│   ├── trailing_stop.py
-│   └── worker.py
-├── env/                         # Entorno virtual (ignorado por Git)
-├── strategies/
-│   ├── bmsb_close.py
-│   ├── bmsb_invert.py
-│   ├── bmsb_ontime.py
-│   ├── custom_strategy.py
-│   ├── ema_cross_original.py
-│   ├── ema_pullback.py
-│   ├── indicators.py
-│   ├── rsi_contrarian_original.py
-│   └── rsi_improved.py
-├── ui/
-│   ├── custom_strategy_tab.py
-│   ├── main_tab.py
-│   └── main_window.py
-├── utils/
-│   ├── api_config_manager.py
-│   ├── config_manager.py
-│   ├── db_manager.py
-│   ├── history_utils.py
-│   └── state_manager.py
-├── main.py
-├── README.md
-└── requirements.txt
-```
-
----
-
-## 🧠 Crear tu Propia Estrategia
-
-Desde la pestaña **"Estrategia Personalizada"** puedes escribir en vivo una nueva función en Python, por ejemplo:
+Desde la pestaña **"Estrategia Personalizada"**, puedes escribir en vivo código como este:
 
 ```python
 def strategy_custom(df, position, config):
@@ -101,29 +98,36 @@ def strategy_custom(df, position, config):
     return None
 ```
 
-Esta función será usada automáticamente por el bot si activas la estrategia `CUSTOM`.
+> Esta estrategia se usará automáticamente si activas la opción `CUSTOM`.
 
 ---
 
-## 📸 Vista Previa de la Aplicación
+## 💪 Tecnologías utilizadas
 
-### Configuración del Exchange
-![Configuración API](imagenes/api.jpg)
-
-### Editor de Estrategia Personalizada
-![Estrategia Personalizada](imagenes/estrategia_p.jpg)
-
-
+- [Python 3.9](https://www.python.org/)
+- [PyQt5](https://pypi.org/project/PyQt5/)
+- [pandas](https://pandas.pydata.org/)
+- [ccxt](https://github.com/ccxt/ccxt)
+- [openpyxl](https://openpyxl.readthedocs.io/)
 
 ---
 
-## 📜 Licencia
+## 💜 Licencia
 
-Este proyecto es de código abierto y libre de uso con fines educativos o personales. Para uso comercial, consulta la licencia incluida o contacta al autor.
+Este proyecto está bajo licencia **MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
 
-## 🙌 Agradecimientos
+## 👋 Agradecimientos
 
-- [ccxt](https://github.com/ccxt/ccxt) por la increíble librería de exchanges
-- La comunidad de PyQt y pandas por sus poderosas herramientas
+- A [ccxt](https://github.com/ccxt/ccxt) por su gran librería multi-exchange.
+- A la comunidad de PyQt5 y pandas.
+
+---
+
+> Desarrollado con ❤️ por TradeAIcode.
+
+---
+
+
+
