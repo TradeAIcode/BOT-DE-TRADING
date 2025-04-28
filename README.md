@@ -3,7 +3,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.9-blue)](https://www.python.org/)
 [![PyQt5](https://img.shields.io/badge/PyQt5-5.15-green)](https://pypi.org/project/PyQt5/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
 ---
 
@@ -114,7 +114,7 @@ def strategy_custom(df, position, config):
 
 ## 💜 Licencia
 
-Este proyecto está bajo licencia **MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo licencia **GPL-3.0**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
 
